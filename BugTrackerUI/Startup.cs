@@ -28,7 +28,6 @@ namespace BugTrackerUI
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            //register the service for dependency injection
             services.AddSingleton< IBugService, BugService >();
         }
 
